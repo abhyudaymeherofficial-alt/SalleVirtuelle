@@ -1,0 +1,131 @@
+/* Global */
+
+body{
+background:#111;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:20px;
+text-align:center;
+}
+
+/* Title */
+
+h1,h2{
+color:#ff3c3c;
+margin-bottom:30px;
+}
+
+/* Inputs */
+
+input{
+width:260px;
+padding:10px;
+margin:6px;
+border-radius:6px;
+border:none;
+font-size:16px;
+}
+
+/* Buttons */
+
+button{
+padding:10px 20px;
+margin:8px;
+border:none;
+border-radius:6px;
+background:#ff3c3c;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#ff1c1c;
+}
+
+/* Video */
+
+video{
+max-width:95%;
+border-radius:10px;
+margin-top:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.8);
+}
+
+/* Chat box */
+
+#comments{
+margin-top:20px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+background:#1e1e1e;
+padding:15px;
+border-radius:10px;
+height:250px;
+overflow-y:auto;
+text-align:left;
+}
+
+/* Each comment */
+
+#comments p{
+margin:5px 0;
+padding:6px;
+background:#2a2a2a;
+border-radius:6px;
+font-size:14px;
+}
+
+/* Comment input */
+
+#commentInput{
+width:60%;
+}
+
+/* Mobile Responsive */
+
+@media (max-width:768px){
+
+body{
+padding:10px;
+}
+
+input{
+width:90%;
+}
+
+button{
+width:90%;
+}
+
+#commentInput{
+width:90%;
+}
+
+#comments{
+width:95%;
+height:200px;
+}
+
+video{
+width:100%;
+}
+
+}
+
+/* Landscape rotation optimization */
+
+@media screen and (orientation:landscape) and (max-width:900px){
+
+video{
+width:80%;
+}
+
+#comments{
+height:150px;
+}
+
+}

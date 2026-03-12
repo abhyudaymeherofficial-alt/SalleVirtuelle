@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Virtual Cinema</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align:center;font-family:Arial;margin-top:80px">
+
+<h1>Virtual Cinema 🎬</h1>
+
+<input id="profile" placeholder="Profile Name"><br><br>
+<input id="room" placeholder="Room ID"><br><br>
+<input id="password" placeholder="Room Password"><br><br>
+
+<button onclick="createRoom()">Create Room</button>
+<button onclick="joinRoom()">Join Room</button>
+
+<script>
+
+function createRoom(){
+
+let profile=document.getElementById("profile").value
+let room=document.getElementById("room").value
+let password=document.getElementById("password").value
+
+localStorage.setItem("profile",profile)
+localStorage.setItem("room",room)
+localStorage.setItem("password",password)
+
+window.location="room.html?mode=create"
+
+}
+
+function joinRoom(){
+
+let profile=document.getElementById("profile").value
+let room=document.getElementById("room").value
+let password=document.getElementById("password").value
+
+localStorage.setItem("profile",profile)
+localStorage.setItem("room",room)
+localStorage.setItem("password",password)
+
+window.location="room.html?mode=join"
+
+}
+
+</script>
+
+</body>
+</html>
