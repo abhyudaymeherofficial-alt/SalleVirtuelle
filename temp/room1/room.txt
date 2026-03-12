@@ -1,2 +1,0 @@
-Room ID: room1
-Password: 1234
